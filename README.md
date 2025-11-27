@@ -8,12 +8,6 @@
 
 A comprehensive collection of advanced C programming projects demonstrating mastery of low-level programming concepts, system programming, and software engineering principles.
 
-## 📋 Assessment Overview
-
-**Total Points**: 32 pts  
-**Assessment Type**: Individual Portfolio  
-**Presentation**: 8-minute comprehensive video demonstration  
-
 ## 🎯 Learning Objectives Achieved
 
 - ✅ **String Manipulation**: Advanced C string processing techniques
