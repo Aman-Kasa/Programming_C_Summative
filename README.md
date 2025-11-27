@@ -1,5 +1,11 @@
 # 🎓 C Programming Summative Assessment Portfolio
 
+<div align="center">
+  <img src="https://github.com/Aman-Kasa.png" alt="Aman Kasa" width="150" height="150" style="border-radius: 50%;">
+  <h3>Aman Kasa</h3>
+  <p><em>African Leadership University (ALU)</em></p>
+</div>
+
 A comprehensive collection of advanced C programming projects demonstrating mastery of low-level programming concepts, system programming, and software engineering principles.
 
 ## 📋 Assessment Overview
@@ -251,9 +257,10 @@ Programming_C_Summative/
 
 ---
 
-**Author**: Student Name  
+**Author**: Aman Kasa  
 **Course**: Low-Level Programming  
-**Institution**: ALU  
-**Assessment Date**: [Current Date]  
+**Institution**: African Leadership University (ALU)  
+**Instructor**: Thadee  
+**GitHub**: [@Aman-Kasa](https://github.com/Aman-Kasa)  
 
 *This portfolio demonstrates comprehensive mastery of C programming, system programming concepts, and software engineering best practices through practical, real-world applications.*
