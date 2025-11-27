@@ -110,14 +110,36 @@ int main() {
             case 5:
                 printf("Enter Student ID to update: ");
                 scanf("%d", &id);
-                if (search_by_id(db, id)) {
-                    student = input_student();
-                    student.id = id;
-                    if (update_student(db, id, student)) {
-                        printf("Student updated successfully!\n");
-                    } else {
-                        printf("Failed to update student!\n");
+                found = search_by_id(db, id);
+                if (found) {
+                    printf("Current student details:\n");
+                    print_student(found);
+                    printf("\nEnter new details:\n");
+                    
+                    printf("Enter Name: ");
+                    scanf(" %[^\n]", found->name);
+                    
+                    printf("Enter Age: ");
+                    scanf("%d", &found->age);
+                    
+                    printf("Enter Course: ");
+                    scanf(" %[^\n]", found->course);
+                    
+                    printf("Enter number of subjects (max %d): ", MAX_SUBJECTS);
+                    scanf("%d", &found->num_subjects);
+                    
+                    if (found->num_subjects > MAX_SUBJECTS) {
+                        found->num_subjects = MAX_SUBJECTS;
                     }
+                    
+                    for (int i = 0; i < found->num_subjects; i++) {
+                        printf("Enter grade for subject %d: ", i + 1);
+                        scanf("%f", &found->grades[i]);
+                    }
+                    
+                    // Recalculate GPA
+                    found->gpa = calculate_gpa(found->grades, found->num_subjects);
+                    printf("Student updated successfully!\n");
                 } else {
                     printf("Student not found!\n");
                 }
