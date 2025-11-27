@@ -1,11 +1,5 @@
 # 🎓 C Programming Summative Assessment Portfolio
 
-<div align="center">
-  <img src="https://github.com/Aman-Kasa.png" alt="Aman Kasa" width="150" height="150" style="border-radius: 50%;">
-  <h3>Aman Kasa</h3>
-  <p><em>African Leadership University (ALU)</em></p>
-</div>
-
 A comprehensive collection of advanced C programming projects demonstrating mastery of low-level programming concepts, system programming, and software engineering principles.
 
 ## 📋 Portfolio Overview
@@ -227,17 +221,6 @@ Programming_C_Summative/
 - **Documentation**: Professional-grade documentation
 - **Testing**: Robust validation and edge case handling
 
-## 🎬 Video Presentation Structure
-
-**Duration**: 8 minutes maximum  
-**Content Coverage**:
-1. **Introduction** (1 min) - Portfolio overview and objectives
-2. **System Monitor Demo** (1.5 min) - Real-time monitoring capabilities
-3. **Student Management** (2 min) - CRUD operations and analytics
-4. **Math Engine** (2 min) - Function pointers and dynamic operations
-5. **Web Scraper** (1 min) - Multi-threaded concurrent downloads
-6. **Technical Highlights** (0.5 min) - Key programming concepts demonstrated
-
 ## 🔧 Development Environment
 
 **Compiler**: GCC with C99 standard  
@@ -255,10 +238,15 @@ Programming_C_Summative/
 
 ---
 
-**Author**: Aman Kasa  
-**Course**: Low-Level Programming  
-**Institution**: African Leadership University (ALU)  
-**Instructor**: Thadee  
-**GitHub**: [@Aman-Kasa](https://github.com/Aman-Kasa)  
+<div align="center">
+  <img src="https://github.com/Aman-Kasa.png" alt="Aman Kasa" width="100" height="100" style="border-radius: 50%;">
+  
+  **Aman Kasa**  
+  *African Leadership University (ALU)*  
+  
+  **Course**: Low-Level Programming  
+  **Instructor**: Thadee  
+  **GitHub**: [@Aman-Kasa](https://github.com/Aman-Kasa)  
+</div>
 
 *This portfolio demonstrates comprehensive mastery of C programming, system programming concepts, and software engineering best practices through practical, real-world applications.*
