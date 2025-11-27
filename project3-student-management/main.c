@@ -1,20 +1,24 @@
 #include "student_management.h"
 
 void show_menu() {
-    printf("\n=== Student Management System ===\n");
+    printf("\n=== Advanced Student Management System ===\n");
     printf("1. Add Student\n");
     printf("2. Display All Students\n");
-    printf("3. Search Student by ID\n");
+    printf("3. Search Student by ID (Linear)\n");
     printf("4. Search Student by Name\n");
     printf("5. Update Student\n");
     printf("6. Delete Student\n");
     printf("7. Sort by GPA\n");
     printf("8. Sort by Name\n");
-    printf("9. Generate Reports\n");
-    printf("10. Save to File\n");
-    printf("11. Load from File\n");
-    printf("12. Exit\n");
-    printf("================================\n");
+    printf("9. Sort by ID\n");
+    printf("10. Binary Search by ID\n");
+    printf("11. Display Top N Students\n");
+    printf("12. Advanced Analytics Report\n");
+    printf("13. Clear All Students\n");
+    printf("14. Save to File\n");
+    printf("15. Load from File\n");
+    printf("16. Exit\n");
+    printf("==========================================\n");
     printf("Choose an option: ");
 }
 
@@ -142,13 +146,40 @@ int main() {
                 break;
                 
             case 9:
-                printf("\n=== Analytics Report ===\n");
-                printf("Total Students: %d\n", db->count);
-                printf("Class Average GPA: %.2f\n", calculate_class_average(db));
-                generate_course_report(db);
+                sort_by_id(db);
+                printf("Students sorted by ID.\n");
+                display_students(db);
                 break;
                 
             case 10:
+                printf("Enter Student ID for binary search: ");
+                scanf("%d", &id);
+                {
+                    int index = binary_search_by_id(db, id);
+                    if (index != -1) {
+                        printf("Student found using binary search:\n");
+                        print_student(&db->students[index]);
+                    } else {
+                        printf("Student not found!\n");
+                    }
+                }
+                break;
+                
+            case 11:
+                printf("Enter number of top students to display: ");
+                scanf("%d", &id);
+                display_top_n_students(db, id);
+                break;
+                
+            case 12:
+                generate_course_report(db);
+                break;
+                
+            case 13:
+                clear_all_students(db);
+                break;
+                
+            case 14:
                 if (save_to_file(db)) {
                     printf("Data saved successfully!\n");
                 } else {
@@ -156,7 +187,7 @@ int main() {
                 }
                 break;
                 
-            case 11:
+            case 15:
                 if (load_from_file(db)) {
                     printf("Data loaded successfully!\n");
                 } else {
@@ -164,7 +195,7 @@ int main() {
                 }
                 break;
                 
-            case 12:
+            case 16:
                 save_to_file(db);
                 free_database(db);
                 printf("Goodbye!\n");
