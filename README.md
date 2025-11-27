@@ -8,9 +8,8 @@
 
 A comprehensive collection of advanced C programming projects demonstrating mastery of low-level programming concepts, system programming, and software engineering principles.
 
-## 📋 Assessment Overview
+## 📋 Portfolio Overview
 
-**Total Points**: 32 pts  
 **Assessment Type**: Individual Portfolio  
 **Presentation**: 8-minute comprehensive video demonstration  
 
@@ -165,16 +164,16 @@ cd project5-web-scraper && ./web_scraper
 | Math Engine | ⭐⭐⭐ | ⭐ | ⭐⭐ | ⭐⭐⭐ | ⭐ |
 | Web Scraper | ⭐⭐⭐ | ⭐⭐⭐ | ⭐⭐ | ⭐⭐ | ⭐⭐⭐ |
 
-## 🎯 Assessment Criteria Fulfillment
+## 🎯 Technical Excellence
 
-### Technical Excellence (24 pts)
+### Core Competencies
 - **Code Quality**: Clean, readable, well-documented code
 - **Memory Management**: Proper allocation/deallocation practices
 - **Error Handling**: Comprehensive error checking and recovery
 - **Algorithm Implementation**: Efficient manual implementations
 - **System Integration**: Effective use of system resources
 
-### Innovation & Design (8 pts)
+### Design Principles
 - **Architecture**: Modular, extensible design patterns
 - **User Experience**: Intuitive interfaces and clear feedback
 - **Performance**: Optimized algorithms and resource usage
