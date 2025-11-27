@@ -11,8 +11,7 @@ A comprehensive collection of advanced C programming projects demonstrating mast
 ## 📋 Portfolio Overview
 
 **Assessment Type**: Individual Portfolio  
-**Presentation**: 8-minute comprehensive video demonstration  
-
+**Presentation**: 8-minute comprehensive video demonstration
 ## 🎯 Learning Objectives Achieved
 
 - ✅ **String Manipulation**: Advanced C string processing techniques
