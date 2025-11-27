@@ -99,9 +99,19 @@ int main() {
                 
             case 2:
                 printf("Enter filename (or press Enter for 'sample_urls.txt'): ");
-                scanf(" %[^\n]", filename);
                 
-                if (strlen(filename) == 0) {
+                // Clear input buffer
+                int c;
+                while ((c = getchar()) != '\n' && c != EOF);
+                
+                if (fgets(filename, sizeof(filename), stdin) != NULL) {
+                    // Remove newline
+                    filename[strcspn(filename, "\n")] = '\0';
+                    
+                    if (strlen(filename) == 0) {
+                        strcpy(filename, "sample_urls.txt");
+                    }
+                } else {
                     strcpy(filename, "sample_urls.txt");
                 }
                 
